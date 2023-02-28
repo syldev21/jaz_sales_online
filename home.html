@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: gray;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px; /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 300px; /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: gray;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div style="width: 100%; overflow: hidden;">
+  <div style="width: 600px; float: left;"> <h2>Dashboard</h2> </div>
+  <div style="margin-right: 0px; float: right"> <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i><span> <i class="fa fa-sign-out" aria-hidden="true"></i></span></a></div>
+<!--  <div style="margin-right: 0px; float: right"> <a href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i><span> Logout</span></a></div>-->
+</div>
+<header>
+  <h3>Quotes</h3>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Customers</a></li>
+      <p style="text-indent: 5%">Mathew Kimweli</p>
+      <p style="text-indent: 5%">Edward Bwoga</p>
+      <p style="text-indent: 5%">Christine Gakii</p>
+      <p style="text-indent: 5%">Joseph Njuguna</p>
+      <li><a href="#">Products</a></li>
+      <p style="text-indent: 5%">Motor Private</p>
+      <p style="text-indent: 5%">Motor Commercial</p>
+    </ul>
+  </nav>
+
+  <article>
+
+  </article>
+</section>
+
+<footer>
+  <p>Copyright &copy; Jubilee-Allianz <script>document.write(new Date().getFullYear())</script></p>
+</footer>
+
+</body>
+</html>
+
